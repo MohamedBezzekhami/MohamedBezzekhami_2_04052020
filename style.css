@@ -253,23 +253,36 @@ img {
   border-radius: 10%;
   width: 400px;
   height: 200px;
-}
 
+}
 p {
   padding-left: 18px;
 }
 
-#imagehebergement {
-  
-  width: 200px;
-  height: 200px; 
-}
 
-#hebergementAmarseille{
+#hebergement a {
+  text-decoration: #000000;
+  color: #000000;
+  
+}
+#hebergement {
   display: flex;
   flex-direction: row;
- justify-content: space-evenly;
+
 }
+
+#grise1 {
+  color: antiquewhite;
+}
+
+#encarts_populaires a {
+  text-decoration: black;
+  color: #000000;
+}
+
+
+
+
 
 
  
