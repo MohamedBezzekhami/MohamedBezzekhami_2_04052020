@@ -58,6 +58,8 @@ nav a:hover {
   flex-direction: row;
   justify-content: space-between;
   margin: 16px 20px 10px 20px;
+  pointer-events: none;
+  
 }
 
 h1,
@@ -250,7 +252,7 @@ i.fas.fa-chart-line {
   float: right;
 }
 img {
-  border-radius: 10%;
+  border-radius: 10% 10% 0% 0%;
   width: 400px;
   height: 200px;
 
