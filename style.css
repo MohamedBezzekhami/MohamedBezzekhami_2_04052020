@@ -1,0 +1,275 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+#blocpage {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 20px 10px 20px;
+}
+
+#ancres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#logo img {
+  width: 100px;
+  height: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 15px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+  padding-top: 15px;
+}
+
+#inscription {
+  color: #0065fc;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 16px 20px 10px 20px;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+aside {
+  width: 20%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*barre de recherche*/
+.barre {
+  max-width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+}
+
+i.fas.fa-map-marker-alt {
+  background-color: #e9ecf0;
+  width: 50px;
+  height: 50px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  text-align: center;
+  line-height: 50px;
+  flex-shrink: 0;
+}
+
+.champ {
+  width: 100%;
+  border: none;
+  border-top: solid 1px #efefef;
+  border-bottom: solid 1px #efefef;
+  padding-left: 10px;
+}
+.champ::placeholder {
+  color: #333538;
+  font-weight: 500;
+}
+
+.bouton_recherche {
+  background-color: #0065fc;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  flex-shrink: 0;
+  border: none;
+}
+
+.bouton_recherche:hover {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+
+#texte_bouton {
+  display: block;
+}
+
+.bouton_recherche i {
+  display: none;
+}
+
+/*filtres*/
+
+.filtres {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.filtres a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.filtres a:hover {
+  color: #0065fc;
+}
+
+#titre {
+  padding-top: 25px;
+  margin-right: 20px;
+}
+
+#liens {
+  padding-top: 10px;
+}
+
+.filtres ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.filtres li {
+  padding-right: 20px;
+}
+
+.filtres i {
+  color: #0065fc;
+  border: 1px solid #deebff;
+  border-radius: 30px;
+  background-color: #deebff;
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+}
+
+.fas.fa-money-bill-wave,
+.fas.fa-child,
+.fas.fa-heart,
+.fas.fa-dog {
+  color: #0065fc;
+  text-align: center;
+  padding: 1em;
+  width: 1em;
+  height: 1em;
+  border-radius: 100%;
+  background-color: #deebff;
+  margin-right: 15px;
+}
+/*
+.blocfiltres{
+  padding: 0;
+  padding-right: 20px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-family: "Ralewa", sans-serif;
+  margin-right: 20px;
+  border: solid 1px #efefef;
+  background-color: transparent;
+}
+*/
+/*
+.bouton_filtres:hover {
+  background-color: #deebff;
+}
+*/
+.texte_bouton {
+  padding-left: 10px;
+}
+/*
+.filterIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #deebff;
+  color: #0065fc;
+  line-height: 46px;
+  text-align: center;
+  display: flex;
+}
+*/
+.info {
+  display: flex;
+  align-items: center;
+}
+
+section.info i {
+  padding-right: 10px;
+  color: #4585e4;
+}
+
+i.fas.fa-star {
+  color: #0065fc;
+}
+i.fas.fa-chart-line {
+  float: right;
+}
+img {
+  border-radius: 10%;
+  width: 400px;
+  height: 200px;
+}
+
+p {
+  padding-left: 18px;
+}
+
+#imagehebergement {
+  
+  width: 200px;
+  height: 200px; 
+}
+
+#hebergementAmarseille{
+  display: flex;
+  flex-direction: row;
+ justify-content: space-evenly;
+}
+
+
+ 
