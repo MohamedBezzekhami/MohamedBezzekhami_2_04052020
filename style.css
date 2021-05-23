@@ -59,7 +59,6 @@ nav a:hover {
   justify-content: space-between;
   margin: 16px 20px 10px 20px;
   pointer-events: none;
-  
 }
 
 h1,
@@ -253,8 +252,8 @@ i.fas.fa-chart-line {
 }
 img {
   border-radius: 10% 10% 0% 0%;
-  width: 400px;
-  height: 200px;
+  width: 250px;
+  height: 125px;
 
 }
 p {
@@ -270,7 +269,8 @@ p {
 #hebergement {
   display: flex;
   flex-direction: row;
-
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 #grise1 {
@@ -282,9 +282,20 @@ p {
   color: #000000;
 }
 
+#Activites {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
+#blochebergements_populaires {
+  display: flex;
+  flex-direction: row;
+}
 
+#fig11{
+  height: 1000px;
+  width: 200px;
 
-
-
- 
+ }
