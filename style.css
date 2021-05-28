@@ -69,7 +69,7 @@ h2 {
 aside {
 
   padding-left: 0.5rem;
-  margin-left: 0.5rem;
+  margin-left: 80px;
   float: right;
   box-shadow: inset 5px 0 5px -5px #29627e;
 }
@@ -245,7 +245,7 @@ i.fas.fa-star {
   color: #0065fc;
 }
 i.fas.fa-chart-line {
-  float: right;
+  padding-left: 180px;
 }
 /*img {
   border-radius: 10% 10% 0% 0%;
@@ -439,7 +439,9 @@ aside{
 	background-color: #F2F2F2;
 	border-radius: 20px;
 	padding: 30px 30px 0 30px;
-	width: 30%;
+	width: 0;
+  padding-left: 40px;
+  padding-bottom: 150px;
 }
 
 aside img{
@@ -450,6 +452,7 @@ aside img{
 #lespopulaires a{
 	text-decoration: none;
 	color: black;
+  
 }
 
 #entete_populaires{
@@ -457,8 +460,12 @@ aside img{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: baseline;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
+  
+  
 }
+
+
 
 #graph{
 	display: flex;
