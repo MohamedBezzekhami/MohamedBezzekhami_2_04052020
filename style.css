@@ -65,12 +65,9 @@ h1,
 h2 {
   font-weight: bold;
 }
-.container {
-  display: flex;
-  justify-content: space-evenly;
-}
+
 aside {
-  width: 20%;
+
   padding-left: 0.5rem;
   margin-left: 0.5rem;
   float: right;
@@ -240,7 +237,7 @@ i.fas.fa-map-marker-alt {
 }
 
 section.info i {
-  padding-right: 10px;
+  padding-right: 20px;
   color: #4585e4;
 }
 
@@ -250,27 +247,40 @@ i.fas.fa-star {
 i.fas.fa-chart-line {
   float: right;
 }
-img {
+/*img {
   border-radius: 10% 10% 0% 0%;
   width: 250px;
   height: 125px;
 
 }
-p {
-  padding-left: 18px;
-}
+*/
 
-
+/*
 #hebergement a {
   text-decoration: #000000;
   color: #000000;
   
 }
 #hebergement {
+  
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+   /*flex-direction: row; */
+ /* flex-wrap: wrap;*/
+  /*border-radius: 20px;*/
+  /* padding: 30px 0 0 30px;
+  background-color: #f2f2f2;
+  width: 65%;
+}
+
+#photo_cannebiere,
+#photo_hduport,
+#photo_les-hotel-les-mouettes{
+  width: 224px;
+  height: 110px;
+  border: 3px solid white;
+  border-radius: 20px 20px 0 0;
+
+
 }
 
 #grise1 {
@@ -281,21 +291,305 @@ p {
   text-decoration: black;
   color: #000000;
 }
+/*
+#blochebergements_populaires {
+  display: flex;
+  flex-direction: row;
+
+} 
+
+aside {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 30px 30px 0 30px;
+  width: 30%;
+}
+
 
 #Activites {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+
+}
+*/
+
+/*Bloc Hébergements*/
+
+/*Fond*/
+#hebergements{
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	padding: 30px 0 0 30px;
+	width: 65%;
 }
 
-#blochebergements_populaires {
+article{
+	display: flex;
+	flex-direction: column;
+}
+
+article img{
+	object-fit: cover;
+}
+
+#titre_hebergements, #suite{
+	margin-bottom: 20px;
+  
+}
+
+#hebergements a{
+	text-decoration: none;
+	color: black;
+}
+
+#hebergements strong{
+	font-weight: bold;
+}
+
+#encarts{
+	display: flex;
+	flex-wrap: wrap;
+/*	justify-content: space-between;*/
+/*	padding-right: 30px;*/
+}
+
+#encarts figure{
+	width: 230px;
+	height: 184px;
+	border: 1px solid white;
+	border-radius: 20px;
+	box-shadow: 1px 1px 6px #7a7d7f;/*ou 0 4px 30px rgba(0 0 0 0.05)*/
+}
+
+.carte{
+	margin-bottom: 30px;
+}
+
+/*Taille des photos*/
+
+#photo_cannebiere,
+#photo_hduport,
+#photo_hlesmouettes,
+#photo_hdelamer,
+#photo_lepanier,
+#photo_hamina {
+	width: 258px;
+	height: 144px;
+	border: 3px solid white;
+	border-radius: 20px 20px 0 0;
+}
+
+/*Taille des légendes*/
+
+#legend1,
+#legend2,
+#legend3,
+#legend4,
+#legend5,
+#legend6 {
+	width: 224px;
+	height: 70px;
+	border: 3px solid white;
+	border-radius: 0 0 20px 20px;
+	color: black;
+	padding-left: 10px;
+	margin-top: -6px;
+	background-color: white;
+}
+
+/*Espace des étoiles*/
+
+#fig1 i, 
+#fig3 i,
+#fig4 i,
+#fig5 i{
+	padding-top: 8px;
+}
+
+#fig2 i,
+#fig6 i{
+	color: #0065FC;/*Toutes les étoiles sont bleues*/
+	padding-top: 8px;
+}
+
+/*icônes bleues*/
+
+#fig1 span,
+#fig3 span,
+#ibleues,
+#fig5 span {
+	color: #0065FC;
+}
+
+/*icônes grises*/
+
+#grise1,
+#grise2,
+#igrises,
+#grise3 {
+	color: #F2F2F2;
+}
+
+/*Bloc les plus populaires*/
+
+/*Fond*/
+aside{
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	padding: 30px 30px 0 30px;
+	width: 30%;
+}
+
+aside img{
+	object-fit: cover;
+}
+
+#lespopulaires a{
+	text-decoration: none;
+	color: black;
+}
+
+#entete_populaires{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: baseline;
+	margin-bottom: 20px;
+}
+
+#graph{
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+/*Taille des card*/
+
+#card1,
+#card2,
+#card3 {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 35px;
+	width: 330px;
+	height: 116px;
+	border: 1px solid white;
+	border-radius: 20px;
+	box-shadow: 1px 1px 6px #7a7d7f;
+}
+
+/*Taille des photos*/
+
+#photo_hsoleildumatin,
+#photo_chaucoeurdeleau,
+#photo_hbleublanc {
+	width: 120px;
+	height: 114px;
+	border: 3px solid white;
+	border-radius: 20px 0 0 20px;
+}
+
+/*Taille des légendes*/
+
+#legend7,
+#legend8,
+#legend9 {
+	width: 220px;
+	height: 114px;
+	border: 3px solid white;
+	border-radius: 0 20px 20px 0;
+	color: black;
+	padding: 10px 0 0 10px;
+	background-color: white;
+}
+
+.main {
   display: flex;
   flex-direction: row;
+  background-color: #f2f2f2; 
 }
 
-#fig11{
-  height: 1000px;
-  width: 200px;
+/*Espace étoiles*/
 
- }
+#legend7 i,
+#legend9 i {
+	margin-top: 40px;
+}
+
+#legend8 i {
+	margin-top: 20px;
+}
+
+/*icônes bleues*/
+
+#legend7 i,
+#legend8 span,
+#legend9 span {
+	color: #0065FC;
+}
+
+/*icônes grises*/
+
+#grise4,
+#grise5 {
+	color: #F2F2F2;
+}
+
+#vieuxport,
+#Calanques {
+  object-fit: cover;
+  border-radius: 20px 20px 20px 20px;
+  width: 200px;
+  height: 300px;
+  
+}
+
+#fortdePomegues,
+#Frioul,
+#NotreDame,
+#Longchamp {
+  object-fit: cover;
+  border-radius: 20px 20px 20px 20px;
+  width: 220px;
+  height: 115px;
+
+}
+
+#img11
+{
+  display: flex;
+  flex-direction: column; 
+  
+}
+
+
+#Activites {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ box-shadow: #F2F2F2;
+
+ 
+}
+
+
+#img10 {
+  margin-bottom: 50px;
+	width: 200px;
+	height: 116px;
+	border: 1px solid white;
+	border-radius: 30px;
+	box-shadow: 1px 1px 6px #7a7d7f;
+ } 
+ 
+
+
+
+
+footer { 
+  background-color: #f2f2f2;
+
+}
+
