@@ -1,17 +1,17 @@
+
+
 body {
   font-family: "Raleway", sans-serif;
-}
-
-@media screen and (min-width: 820px) {
-  .full-width-img {
+  width: fit-content;
+  max-width: 100%;
   margin: auto;
-  width: 60%;
-  }
+}
 
 #blocpage {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
 header {
   display: flex;
   flex-direction: row;
@@ -30,11 +30,14 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
 }
 
 #logo img {
   width: 100px;
   height: 50px;
+  padding-top: 10px;
+  
 }
 
 nav ul {
@@ -68,10 +71,19 @@ nav a:hover {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-weight: bold;
+  
 }
 
+.recherche,
+.barre,
+.blocfiltres,
+.info {
+  padding-left: 13px;
+
+}
 aside {
 
   padding-left: 0.5rem;
@@ -128,10 +140,7 @@ i.fas.fa-map-marker-alt {
   border: none;
 }
 
-.bouton_recherche:hover {
-  background-color: #f2f2f2;
-  color: #000000;
-}
+
 
 #texte_bouton {
   display: block;
@@ -547,12 +556,56 @@ footer p {
 footer {
   display: flex;
   flex-direction: row;  
-  
-  
-
-  
-}
+  }
 
 #foot2,
-#foot3 {
-  padding-left: 300px; }
+#foot3  {
+  padding-left: 300px;}
+
+#titreactivite {
+  padding-left: 34px;
+}
+
+
+@media all and (max-width: 699px) {
+
+
+
+nav li  {
+  margin-top: 50px;
+  width: 200px;
+ 
+
+}
+nav a {
+  padding-right: 900px;
+}
+.recherche {
+  width: 400px;
+}
+.barre {
+  width: 300px;
+}
+.blocfiltres {
+  width: 500px;
+  flex-wrap: wrap;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}
+#encarts{
+	display: flex;
+	flex-direction: column;
+}
+
+#Activites {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+}
