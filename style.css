@@ -681,14 +681,15 @@ input {
 /* blocfiltres */
 
 .blocfiltres {
- 
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
    
 }
 #liens ul {
-  padding-top: 36px;
-  flex-wrap: wrap;
   
+  padding-top: 36px;
+ 
   
 }
 #liens li {
@@ -702,6 +703,7 @@ input {
 .main {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 #encarts{
 	display: flex;
@@ -733,12 +735,19 @@ footer {
 #IleFrioul,
 #Notredamedelagarde,
 #Parc {
-  width: 350px;
+  width: 290px;
   height: 200px;
   
 
 }
-
+#vieuxport,
+#Calanques {
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+  width: 350px;
+  height: 220px;
+  
+}
 #Activités {
   display: flex;
   justify-content: center;
@@ -768,4 +777,40 @@ footer {
   font-size: 15px;
   
 }
+}
+
+@media all and (max-width: 1024px)
+{
+nav ul {
+  padding-right:400px;
+}
+nav span {
+  position: absolute;
+  padding-left: 250px;
+}
+h1 {
+  font-size: 30px;
+}
+.recherche {
+  width: 400px;
+}
+
+.main
+ {
+   
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#Activites {
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
 }
