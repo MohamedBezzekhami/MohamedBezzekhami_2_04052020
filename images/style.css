@@ -1,0 +1,650 @@
+body {
+  font-family: "Raleway", sans-serif;
+  width: fit-content;
+  max-width: 1700px;
+  margin: auto;
+}
+
+#blocpage {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 20px 10px 20px;
+}
+
+#ancres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#logo img {
+  width: 100px;
+  height: 50px;
+  padding-top: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 15px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+  padding-top: 15px;
+}
+
+#inscription {
+  color: #0065fc;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 16px 20px 10px 20px;
+  pointer-events: none;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+.recherche,
+.barre,
+.blocfiltres,
+.info {
+  padding-left: 13px;
+}
+aside {
+  padding-left: 0.5rem;
+  margin-left: 0px;
+  float: right;
+  box-shadow: inset 5px 0 5px -5px #29627e;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*barre de recherche*/
+.barre {
+  max-width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+}
+
+i.fas.fa-map-marker-alt {
+  background-color: #e9ecf0;
+  width: 50px;
+  height: 50px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  text-align: center;
+  line-height: 50px;
+  flex-shrink: 0;
+}
+
+.champ {
+  width: 100%;
+  border: none;
+  border-top: solid 1px #efefef;
+  border-bottom: solid 1px #efefef;
+  padding-left: 10px;
+}
+.champ::placeholder {
+  color: #333538;
+  font-weight: 500;
+}
+
+.bouton_recherche {
+  background-color: #0065fc;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 0 20px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  color: white;
+  flex-shrink: 0;
+  border: none;
+}
+
+#texte_bouton {
+  display: block;
+}
+
+.bouton_recherche i {
+  display: none;
+}
+
+/*filtres*/
+
+.filtres {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.filtres a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.filtres a:hover {
+  color: #0065fc;
+}
+
+#titre {
+  padding-top: 25px;
+  margin-right: 20px;
+}
+
+#liens {
+  padding-top: 10px;
+}
+
+.filtres ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.filtres li {
+  padding-right: 20px;
+}
+
+.filtres i {
+  color: #0065fc;
+  border: 1px solid #deebff;
+  border-radius: 30px;
+  background-color: #deebff;
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+}
+
+.fas.fa-money-bill-wave,
+.fas.fa-child,
+.fas.fa-heart,
+.fas.fa-dog {
+  color: #0065fc;
+  text-align: center;
+  padding: 1em;
+  width: 1em;
+  height: 1em;
+  border-radius: 100%;
+  background-color: #deebff;
+  margin-right: 15px;
+}
+
+/*
+#eco,
+#famille,
+#romantique,
+#animaux {
+	border: 2px solid #F2F2F2;
+	border-radius: 30px;
+	height: 35px;
+	margin-right: 20px;
+}
+
+#billet,
+#enfant,
+#coeur,
+#chien {
+	text-align: center;
+	padding-top: 7px;
+}
+*/
+.texte_bouton {
+  padding-left: 10px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+section.info i {
+  padding-right: 20px;
+  color: #4585e4;
+}
+
+i.fas.fa-star {
+  color: #0065fc;
+}
+i.fas.fa-chart-line {
+  padding-left: 180px;
+}
+
+/*Fond*/
+#hebergements {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 30px 0 0 0px;
+  /*padding-right: 40px;*/
+  width: 65%;
+}
+
+#blochebergements_populaires {
+  padding-right: 20px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+article img {
+  object-fit: cover;
+}
+
+#titre_hebergements,
+#suite {
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
+
+#hebergements a {
+  text-decoration: none;
+  color: black;
+}
+
+#hebergements strong {
+  font-weight: bold;
+}
+
+#encarts {
+  display: flex;
+  flex-wrap: wrap;
+  /*	justify-content: space-between;*/
+  /*	padding-right: 30px;*/
+}
+
+#encarts figure {
+  width: 240px;
+  height: 184px;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 6px #7a7d7f; /*ou 0 4px 30px rgba(0 0 0 0.05)*/
+}
+
+.carte {
+  margin-bottom: 30px;
+}
+
+/*Taille des photos*/
+
+#photo_cannebiere,
+#photo_hduport,
+#photo_hlesmouettes,
+#photo_hdelamer,
+#photo_lepanier,
+#photo_hamina {
+  width: 258px;
+  height: 144px;
+  border: 3px solid white;
+  border-radius: 20px 20px 0 0;
+}
+
+/*Taille des légendes*/
+
+#legend1,
+#legend2,
+#legend3,
+#legend4,
+#legend5,
+#legend6 {
+  width: 250px;
+  height: 70px;
+  border: 3px solid white;
+  border-radius: 0 0 20px 20px;
+  color: black;
+  padding-left: 10px;
+  margin-top: -6px;
+  background-color: white;
+}
+
+/*Espace des étoiles*/
+
+#fig1 i,
+#fig3 i,
+#fig4 i,
+#fig5 i {
+  padding-top: 8px;
+}
+
+#fig2 i,
+#fig6 i {
+  color: #0065fc; /*Toutes les étoiles sont bleues*/
+  padding-top: 8px;
+}
+
+/*icônes bleues*/
+
+#fig1 span,
+#fig3 span,
+#ibleues,
+#fig5 span {
+  color: #0065fc;
+}
+
+/*icônes grises*/
+
+#grise1,
+#grise2,
+#igrises,
+#grise3 {
+  color: #f2f2f2;
+}
+
+/*Bloc les plus populaires*/
+
+/*Fond*/
+aside {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 30px 30px 0 30px;
+  width: 25%;
+  padding-bottom: 30px;
+}
+
+aside img {
+  object-fit: cover;
+}
+
+#lespopulaires a {
+  text-decoration: none;
+  color: black;
+}
+
+#entete_populaires {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+
+#graph {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*Taille des card*/
+
+#card1,
+#card2,
+#card3 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 35px;
+  width: 330px;
+  height: 170px;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 1px 1px 6px #7a7d7f;
+}
+
+/*Taille des photos*/
+
+#photo_hsoleildumatin,
+#photo_chaucoeurdeleau,
+#photo_hbleublanc {
+  width: 190px;
+  height: 160px;
+  border: 3px solid white;
+  border-radius: 20px 0 0 20px;
+}
+
+/*Taille des légendes*/
+
+#legend7,
+#legend8,
+#legend9 {
+  width: 220px;
+  height: 154px;
+  border: 3px solid white;
+  border-radius: 0 20px 20px 0;
+  color: black;
+  padding: 10px 0 0 10px;
+  background-color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f2f2;
+  justify-content: space-between;
+}
+
+/*Espace étoiles*/
+
+#legend7 i,
+#legend9 i {
+  margin-top: 40px;
+}
+
+#legend8 i {
+  margin-top: 20px;
+}
+
+/*icônes bleues*/
+
+#legend7 i,
+#legend8 span,
+#legend9 span {
+  color: #0065fc;
+}
+
+/*icônes grises*/
+
+#grise4,
+#grise5 {
+  color: #f2f2f2;
+}
+
+#vieuxport,
+#Calanques {
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+  width: 350px;
+  height: 350px;
+}
+
+#fortdePomegues,
+#Frioul,
+#NotreDame,
+#Longchamp {
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+  width: 350px;
+  height: 150px;
+}
+
+#img11 {
+  display: flex;
+  flex-direction: column;
+}
+
+#Activites {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: #ffffff;
+}
+
+#img10 {
+  width: 290px;
+  height: 365px;
+  border: 3px solid #f2f2f2;
+  border-radius: 20px 20px 20px 20px;
+  color: black;
+  padding: 0px 40px 40px 0px;
+  padding-right: 60px;
+  background-color: #ffffff;
+}
+
+#fort,
+#IleFrioul,
+#Notredamedelagarde,
+#Parc {
+  width: 288px;
+  height: 160px;
+  border: 3px solid #f2f2f2;
+  border-radius: 20px 20px 20px 20px;
+  color: black;
+  padding: 0px 40px 40px 0px;
+  padding-right: 60px;
+  background-color: #ffffff;
+}
+
+footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 190px;
+  padding-top: 15px;
+}
+
+footer p {
+  padding-left: 40px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#titreactivite {
+  padding-left: 34px;
+}
+
+/* VERSION MOBILE */
+@media all and (max-width: 699px) {
+  header {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #blocpage {
+    margin: 0px;
+    padding: 0px;
+  }
+  nav li {
+    margin-top: 50px;
+    width: 200px;
+  }
+  nav a {
+    padding-right: 900px;
+  }
+  .recherche {
+    width: 400px;
+  }
+  .barre {
+    width: 300px;
+  }
+  /* .blocfiltres {
+     width: 500px; 
+    padding: 0;
+    flex-wrap: wrap;
+  } */
+  .filtres {
+    flex-wrap: wrap;
+  }
+  #liens {
+    padding-top: 0px;
+  }
+  #liens ul {
+    flex-wrap: wrap;
+   padding-top:8px; 
+  }
+
+
+  #liens li {
+    margin-bottom: 10px;
+    /*padding-right: 80px;*/
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  #encarts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #Activites {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* VERSION TABLETTE */
+@media all and (max-width: 1024px) {
+  nav ul {
+    padding-right: 400px;
+  }
+  nav span {
+    position: absolute;
+    padding-left: 250px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  .recherche {
+    width: 400px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #Activites {
+    display: flex;
+    flex-direction: column;
+  }
+  footer {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+}

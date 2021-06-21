@@ -3,7 +3,7 @@
 body {
   font-family: "Raleway", sans-serif;
   width: fit-content;
-  max-width: 100%;
+  max-width: 1700px;
   margin: auto;
 }
 
@@ -650,19 +650,19 @@ nav li:hover {
 }
 /* espace bloc recherche */
 .recherche {
-  width: 200px;
   padding-left: 20px;
-  padding-right: 40px;
+  padding-right: 42px;
+  
 }
 form {
-  width: 100%;
+  width: 100px;
   margin-top: 30px;
 }
 .map {
   width: 10%;
 }
 input {
-  width: 100%;
+  width: 80px;
 }
 
 .bouton_recherche {
@@ -682,25 +682,31 @@ input {
 
 
 /* blocfiltres */
-
+/*
 .blocfiltres {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
    
+} */
+
+.filtres {
+   flex-wrap: wrap;  
+}
+#liens {
+  padding-top: 0px;
 }
 #liens ul {
-  
-  padding-top: 36px;
- 
-  
-}
+  flex-wrap: wrap;
+} 
+  /* padding-top:8px; */
+
 #liens li {
-   margin-bottom: 10px; 
-   padding-right: 80px;
+    margin-bottom: 10px; 
+   /*padding-right: 80px;*/
 }
 #titre {
-   margin-bottom: 20px; 
+   /*margin-bottom: 20px; */
   
 }
 .main {
@@ -736,9 +742,9 @@ footer {
 #Calanques,
 #fort,
 #IleFrioul,
-#Notredamedelagarde,
+#NotreDame,
 #Parc {
-  width: 290px;
+  width: 320px;
   height: 200px;
   
 
@@ -747,7 +753,7 @@ footer {
 #Calanques {
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
-  width: 350px;
+  width: 200px;
   height: 220px;
   
 }
@@ -780,22 +786,48 @@ footer {
   font-size: 15px;
   
 }
+aside{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  order: 1;
+}
+#card1,
+#card2,
+#card3 {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 35px;
+	width:  300px;
+	height: 170px;
+	border: 1px solid white;
+	border-radius: 20px;
+	box-shadow: 1px 1px 6px #7a7d7f;
+}
 }
 
 @media all and (max-width: 1024px)
 {
+
+
 nav ul {
-  padding-right:400px;
+  padding-right: 300px;
+  font-size: 20px;
+  margin-top: 16px;
 }
 nav span {
   position: absolute;
-  padding-left: 250px;
+  padding-left: 300px;
+  font-size: 20px;
 }
 h1 {
-  font-size: 30px;
+  font-size: 20px;
 }
 .recherche {
-  width: 350px;
+  width: 400px;
 }
 
 .main
@@ -814,6 +846,68 @@ footer {
   height: 600px;
   display: flex;
   flex-direction: column;
+}
+#liens ul {
+  display: flex;
+  flex-direction: column;
+} 
+
+#blochebergements_populaires {
+  width: 100%;
+}
+
+#photo_hsoleildumatin,
+#photo_chaucoeurdeleau,
+#photo_hbleublanc {
+	width: 140px;
+	height: 160px;
+	border: 3px solid white;
+	border-radius: 20px 0 0 20px;
+
+}
+/*#card1,
+#card2,
+#card3 {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 35px;
+	width:  200px;
+	height: 170px;
+	border: 1px solid white;
+	border-radius: 20px;
+	box-shadow: 1px 1px 6px #7a7d7f;
+}*/
+#Activites {
+  display: flex;
+  flex-direction: column;
+  
+
+}
+#vieuxport,
+#Calanques
+{
+  width: 514px;
+  height: 340px;
+  
+
+}
+#img10 {
+  width: 450px;
+	height: 370px;
+	border: 3px solid #f2f2f2;
+	border-radius: 20px 20px 20px 20px;
+	color: black;
+	padding: 0px 40px 40px 0px;
+  padding-right: 60px;
+	background-color: #ffffff;
+ } 
+
+ #fortdePomegues,
+#Frioul,
+#NotreDame,
+#Longchamp {
+  width: 450px;
+  height: 200px;
 }
 
 }
